@@ -1,16 +1,16 @@
-# Ping CRM
+# Ping CRM (Vue 2 version)
 
 A demo application to illustrate how Inertia.js works.
 
-![](https://raw.githubusercontent.com/inertiajs/pingcrm/master/screenshot.png)
+![](https://raw.githubusercontent.com/inertiajs/pingcrm-vue2/master/screenshot.png)
 
 ## Installation
 
 Clone the repo locally:
 
 ```sh
-git clone https://github.com/inertiajs/pingcrm.git pingcrm
-cd pingcrm
+git clone https://github.com/inertiajs/pingcrm-vue2.git pingcrm-vue2
+cd pingcrm-vue2
 ```
 
 Install PHP dependencies:
