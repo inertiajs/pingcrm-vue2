@@ -9,19 +9,22 @@
 </template>
 
 <script>
+import { v4 as uuid } from 'uuid'
+
 export default {
   inheritAttrs: false,
   props: {
     id: {
       type: String,
       default() {
-        return `select-input-${this._uid}`
+        return `select-input-${uuid()}`
       },
     },
-    value: [String, Number, Boolean],
-    label: String,
     error: String,
+    label: String,
+    value: [String, Number, Boolean],
   },
+  emits: ['input'],
   data() {
     return {
       selected: this.value,
