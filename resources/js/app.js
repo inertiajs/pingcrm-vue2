@@ -10,8 +10,9 @@ InertiaProgress.init()
 
 createInertiaApp({
   resolve: name => require(`./Pages/${name}`),
-  title: title => `${title} - Ping CRM`,
-  setup({ el, app, props }) {
+  title: title => title ? `${title} - Ping CRM` : 'Ping CRM',
+  setup({ el, app, props, plugin }) {
+    Vue.use(plugin)
     new Vue({ render: h => h(app, props) })
       .$mount(el)
   },
